@@ -1,0 +1,28 @@
+.logo {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+@include breakpoint-down(1024px) {
+  .logo__img {
+    width: 164px;
+    height: 30px;
+  }
+
+  .logo--bigger .logo__img {
+    width: 186px;
+    height: 34px;
+  }
+}
+
+@include breakpoint-down(590px) {
+  .logo__img {
+    width: 140px;
+    height: 26px;
+  }
+
+  .logo--bigger .logo__img {
+    width: 202px;
+    height: 38px;
+  }
+}

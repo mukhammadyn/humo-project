@@ -1,0 +1,57 @@
+.site-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.site-link__icon {
+  flex-shrink: 0;
+}
+
+.site-link__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 8px;
+}
+
+.site-link__title {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.site-link--bigger .site-link__title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.site-link__subtitle {
+  color: #b4b4b4;
+}
+
+@include breakpoint-down(1024px) {
+  .site-link--bigger .site-link__title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@include breakpoint-down(590px) {
+  .site-link--bigger .site-link__title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .site-link__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
