@@ -447,4 +447,22 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #1f272d;
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
 /*# sourceMappingURL=main.css.map */
