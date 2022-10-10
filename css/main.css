@@ -1244,6 +1244,7 @@ img {
 @media only screen and (max-width: 590px) {
   .hero {
     padding-top: 36px;
+    padding-bottom: 32px;
   }
   .hero__content-title {
     margin-bottom: 68px;
@@ -1305,6 +1306,189 @@ img {
     top: -45px;
     left: -62px;
     background-size: contain;
+  }
+}
+
+.blue-title {
+  position: relative;
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #53bcff;
+}
+
+.blue-title::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
+}
+
+.blue-title--big::before {
+  background-image: url(../../img/big-title-line.svg);
+}
+
+.faq {
+  padding-top: 78px;
+  padding-bottom: 86px;
+}
+
+.faq__title {
+  margin: 0 auto;
+  line-height: 117px;
+  text-align: center;
+}
+
+.faq__desc {
+  max-width: 1006px;
+  margin: 0 auto;
+  margin-bottom: 108px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #000000;
+}
+
+.faq__list {
+  max-width: 1370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__item-desc {
+  margin: 0;
+}
+
+.faq__item--yellow .faq__item-desc {
+  color: #ff9000;
+}
+
+.faq__item--yellow .faq__item-desc::before {
+  background-image: url(../../img/light.svg), linear-gradient(228.29deg, #ffe7b5 14.41%, #fdfdd2 92.64%);
+}
+
+.faq__item--blue .faq__item-desc {
+  color: #53bcff;
+}
+
+.faq__item--blue .faq__item-desc::before {
+  background-image: url(../../img/box.svg);
+  background-color: #ecf6ff;
+}
+
+.faq__item--silver .faq__item-desc {
+  color: #6d2805;
+}
+
+.faq__item--silver .faq__item-desc::before {
+  background-image: url(../../img/watches.svg), linear-gradient(228.29deg, #ffb692 14.41%, #ffe4c6 92.64%);
+}
+
+.faq__item-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.faq__item-desc::before {
+  width: 163px;
+  height: 163px;
+  margin-bottom: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
+}
+
+@media only screen and (max-width: 1024px) {
+  .faq__title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 76px;
+  }
+  .faq__desc {
+    margin-bottom: 80px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .faq__item-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .faq__item-desc::before {
+    width: 124px;
+    height: 124px;
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 66px 83px, cover;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .faq {
+    padding-top: 32px;
+  }
+  .faq__desc {
+    margin-bottom: 48px;
+  }
+  .faq__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 36px;
+  }
+  .faq__item-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .faq__item-desc::before {
+    margin-bottom: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

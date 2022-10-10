@@ -218,6 +218,7 @@
 @include breakpoint-down(590px) {
   .hero {
     padding-top: 36px;
+    padding-bottom: 32px;
   }
 
   .hero__content-title {

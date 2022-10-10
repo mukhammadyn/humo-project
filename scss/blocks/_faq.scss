@@ -1,0 +1,150 @@
+.faq {
+  padding-top: 78px;
+  padding-bottom: 86px;
+}
+
+.faq__title {
+  margin: 0 auto;
+  line-height: 117px;
+  text-align: center;
+}
+
+.faq__desc {
+  max-width: 1006px;
+  margin: 0 auto;
+  margin-bottom: 108px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #000000;
+}
+
+.faq__list {
+  max-width: 1370px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__item-desc {
+  margin: 0;
+}
+
+.faq__item--yellow {
+  .faq__item-desc {
+    color: #ff9000;
+
+    &::before {
+      background-image: url(../../img/light.svg),
+        linear-gradient(228.29deg, #ffe7b5 14.41%, #fdfdd2 92.64%);
+    }
+  }
+}
+
+.faq__item--blue {
+  .faq__item-desc {
+    color: #53bcff;
+
+    &::before {
+      background-image: url(../../img/box.svg);
+      background-color: #ecf6ff;
+    }
+  }
+}
+
+.faq__item--silver {
+  .faq__item-desc {
+    color: #6d2805;
+
+    &::before {
+      background-image: url(../../img/watches.svg),
+        linear-gradient(228.29deg, #ffb692 14.41%, #ffe4c6 92.64%);
+    }
+  }
+}
+
+.faq__item-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  &::before {
+    width: 163px;
+    height: 163px;
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+@include breakpoint-down(1024px) {
+  .faq__title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 76px;
+  }
+
+  .faq__desc {
+    margin-bottom: 80px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .faq__item-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &::before {
+      width: 124px;
+      height: 124px;
+      margin-bottom: 26px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 66px 83px, cover;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+}
+
+@include breakpoint-down(690px) {
+  .faq {
+    padding-top: 32px;
+  }
+
+  .faq__desc {
+    margin-bottom: 48px;
+  }
+
+  .faq__list {
+    flex-direction: column;
+    row-gap: 36px;
+  }
+
+  .faq__item-desc {
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      margin-bottom: 16px;
+    }
+  }
+}
