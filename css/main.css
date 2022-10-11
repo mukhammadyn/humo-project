@@ -620,6 +620,10 @@ img {
   border-radius: 47px;
 }
 
+.site-primary-link:hover {
+  opacity: 0.8;
+}
+
 .site-primary-link--middle {
   padding: 12px 38px;
   -webkit-box-shadow: none;
@@ -1346,6 +1350,7 @@ img {
   font-size: 36px;
   line-height: 44px;
   color: #53bcff;
+  text-align: center;
 }
 
 .blue-title::before {
@@ -1362,6 +1367,10 @@ img {
 
 .blue-title--big::before {
   background-image: url(../../img/big-title-line.svg);
+}
+
+.blue-title--min::before {
+  background-image: url(../../img/min-text-line.svg);
 }
 
 .faq {
@@ -2109,6 +2118,305 @@ img {
   .partners__carousel-item-img {
     width: 143px;
     height: 22px;
+  }
+}
+
+.plans {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.plans__heading {
+  line-height: 61px;
+}
+
+.plans__subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.plans__desc {
+  max-width: 552px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.plans__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 64px;
+          column-gap: 64px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans__item {
+  -webkit-box-shadow: 0px 9.0625px 12.0833px -3.02083px rgba(16, 24, 40, 0.08), 0px 3.02083px 4.53125px -1.51042px rgba(16, 24, 40, 0.03);
+          box-shadow: 0px 9.0625px 12.0833px -3.02083px rgba(16, 24, 40, 0.08), 0px 3.02083px 4.53125px -1.51042px rgba(16, 24, 40, 0.03);
+  border-radius: 40px;
+}
+
+.plans__item-top {
+  padding: 32px;
+  background-color: #ffffff;
+}
+
+.plans__item-title {
+  text-align: center;
+}
+
+.plans__item-status-img {
+  margin-bottom: 20px;
+}
+
+.plans__item-status {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #53bcff;
+}
+
+.plans__item-cost {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.plans__item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans__item-checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+.plans__item-checks::before {
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+  background-image: url(../../img/check.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.plans__item-checks:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.plans__item-checks b {
+  font-weight: 700;
+  color: #667085;
+}
+
+.plans__item-checks span {
+  font-weight: 700;
+  color: #8fcdff;
+}
+
+.plans__item-checks--disable {
+  text-decoration: line-through;
+  color: #c1c1c1;
+}
+
+.plans__item-checks--disable::before {
+  background-image: url(../../img/x.svg);
+}
+
+.plans__item-bottom {
+  padding: 24px;
+  background-color: #f9fafb;
+  border-radius: 0px 0px 30px 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .plans__subtitle {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .plans__list {
+    -webkit-column-gap: 36px;
+            column-gap: 36px;
+  }
+  .plans__item {
+    border-radius: 30px;
+  }
+  .plans__item-top {
+    padding: 24px;
+  }
+  .plans__item-status-img {
+    margin-bottom: 15px;
+  }
+  .plans__item-status {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .plans__item-cost {
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .plans__item-checks {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .plans__item-bottom {
+    padding: 24px;
+    border-radius: 0px 0px 30px 30px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .plans__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 24px;
+  }
+  .plans__item {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .plans__item-checks {
+    font-size: 17px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plans__item-bottom {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .plans__list {
+    row-gap: 36px;
+  }
+  .plans__item {
+    max-width: 343px;
+  }
+  .plans__item-checks {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .plans__item-bottom {
+    text-align: center;
+  }
+}
+
+.questions {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.questions__container {
+  max-width: 1176px;
+  margin: 0 auto;
+}
+
+.questions__heading {
+  margin-top: 0;
+  margin-bottom: 59px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.questions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.questions__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.question__item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions__item-title {
+  margin: 0;
+}
+
+.questions__item-btn {
+  padding: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.questions__item-answer {
+  margin-bottom: 0;
+  display: none;
+}
+
+.questions__item--open .questions__item-answer {
+  display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .questions__heading {
+    margin-bottom: 36px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .questions__heading {
+    font-size: 32px;
+    line-height: 39px;
   }
 }
 /*# sourceMappingURL=main.css.map */

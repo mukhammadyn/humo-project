@@ -6,6 +6,7 @@
   font-size: 36px;
   line-height: 44px;
   color: #53bcff;
+  text-align: center;
 
   &::before {
     width: 100%;
@@ -22,6 +23,12 @@
   &--big {
     &::before {
       background-image: url(../../img/big-title-line.svg);
+    }
+  }
+
+  &--min {
+    &::before {
+      background-image: url(../../img/min-text-line.svg);
     }
   }
 }
