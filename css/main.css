@@ -2005,7 +2005,7 @@ img {
       flex-shrink: 0;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
   .info__list-item-img-wrapper {
     width: 480px;
     height: 464px;
@@ -2111,6 +2111,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .partners__heading {
+    margin-bottom: 36px;
     font-size: 32px;
     line-height: 39px;
   }

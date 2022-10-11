@@ -59,7 +59,7 @@
   flex-shrink: 0;
 }
 
-@include breakpoint-down(1400px) {
+@include breakpoint-down(1440px) {
   .info__list-item-img-wrapper {
     width: 480px;
     height: 464px;

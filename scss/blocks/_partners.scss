@@ -49,6 +49,7 @@
 
 @include breakpoint-down(500px) {
   .partners__heading {
+    margin-bottom: 36px;
     font-size: 32px;
     line-height: 39px;
   }
