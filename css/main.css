@@ -1811,6 +1811,7 @@ img {
 .demo-sites__carousel-wrapper {
   position: relative;
   margin-top: 43px;
+  overflow: hidden;
 }
 
 .demo-sites__carousel-btn {
@@ -2084,6 +2085,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
 }
 
 .partners__carousel-item {
