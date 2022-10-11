@@ -1,0 +1,134 @@
+.demo-sites {
+  padding-top: 30px;
+}
+
+.demo-sites__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+}
+
+.demo-sites__desc {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.demo-sites__carousel-wrapper {
+  position: relative;
+  margin-top: 43px;
+}
+
+.demo-sites__carousel-btn {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 4px 41px #ededed;
+    border-color: transparent;
+  }
+}
+
+.demo-sites__carousel-btn--prev {
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.demo-sites__carousel {
+  max-width: 1326px;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.demo-sites__carousel-card {
+  width: 426px;
+  height: 276px;
+  margin-bottom: 24px;
+}
+
+.demo-sites__carousel-img {
+  object-fit: cover;
+}
+
+.demo-sites__carousel-item-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #34a6ff;
+
+  &::after {
+    width: 24px;
+    height: 24px;
+    margin-left: 14px;
+    background-image: url(../../img/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
+}
+
+.demo-sites__carousel-btn--next {
+  right: 0;
+}
+
+.demo-sites__link {
+  margin-top: 65px;
+  text-align: center;
+}
+
+@include breakpoint-down(1744px) {
+  .demo-sites__desc {
+    max-width: 748px;
+  }
+
+  .demo-sites__carousel-btn {
+    width: 80px;
+    height: 80px;
+    top: calc(50% - 40px);
+  }
+
+  .demo-sites__carousel-card {
+    width: 244px;
+    height: 158px;
+    margin-bottom: 16px;
+  }
+
+  .demo-sites__carousel-img {
+    width: 244px;
+    height: 158px;
+  }
+
+  .demo-sites__link {
+    margin-top: 36px;
+  }
+}
+
+@include breakpoint-down(870px) {
+  .demo-sites__carousel-btn {
+    width: 36px;
+    height: 36px;
+    top: calc(50% - 18px);
+  }
+}
