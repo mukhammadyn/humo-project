@@ -137,6 +137,11 @@
 }
 
 @include breakpoint-down(550px) {
+  .product {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   .product__content {
     padding-left: 16px;
     padding-right: 16px;
