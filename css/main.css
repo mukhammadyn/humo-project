@@ -450,6 +450,13 @@ img {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 520px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -1489,6 +1496,147 @@ img {
   }
   .faq__item-desc::before {
     margin-bottom: 16px;
+  }
+}
+
+.product {
+  padding-top: 86px;
+  padding-bottom: 83px;
+}
+
+.product__content {
+  width: 100%;
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 397px;
+  padding-left: 47px;
+  background-image: url(../../img/devices.png);
+  background-repeat: no-repeat;
+  background-position: right bottom calc(74px);
+  background-color: #ecf6ff;
+  border-radius: 40px;
+}
+
+.product__content::before {
+  width: 230px;
+  height: 215px;
+  position: absolute;
+  left: 510px;
+  bottom: 102px;
+  background-image: url(../../img/responsible.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  content: "";
+}
+
+.product__title {
+  max-width: 1123px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.product__desc {
+  max-width: 841px;
+  margin-bottom: 56px;
+}
+
+@media only screen and (max-width: 1806px) {
+  .product__content::before {
+    left: calc(50% - 540px);
+    bottom: 102px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .product__content {
+    padding-bottom: 159px;
+    background-image: url(../../img/devices-tablet.png);
+    background-position: right bottom;
+  }
+  .product__content::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product__content {
+    padding-top: 29px;
+    padding-bottom: 159px;
+    padding-left: 32px;
+    background-image: url(../../img/devices-tablet.png);
+    background-position: right bottom calc(32px);
+  }
+  .product__content::before {
+    width: 153px;
+    height: 83px;
+    display: block;
+    left: calc(50% - 163px);
+    bottom: 45px;
+    background-size: contain;
+  }
+  .product__title {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .product__desc {
+    max-width: 505px;
+    margin-bottom: 36px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .product__content::before {
+    left: calc(50% - 300px);
+  }
+}
+
+@media only screen and (max-width: 922px) {
+  .product__desc {
+    max-width: 359px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .product__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 36px;
+    background-position: right bottom calc(140px);
+  }
+  .product__content::before {
+    display: none;
+  }
+  .product__title {
+    max-width: 500px;
+    margin-bottom: 324px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .product__desc {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .product__content {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url(../../img/devices-mobile.png);
   }
 }
 /*# sourceMappingURL=main.css.map */
